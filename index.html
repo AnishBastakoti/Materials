@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Material</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p>Write javascript to save data from the form to the jsonData element and to load data from jsonData to the form</p>
+
+  <div class="content">
+    <form name="details" class="detailForm">
+      <div class="formRow">
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+      </div>
+      <div class="formRow">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" />
+      </div>
+      <div class="formRow">
+        <label for="city">City</label>
+        <input type="text" id="city" />
+      </div>
+      <input type="submit" value="Save" id="submitBtn" />
+      <input type="button" value="Load" id="loadBtn" />
+    </form>
+
+    <textarea id="jsonData" class="jsonView">
+      {
+        "name": "Pulchowk Campus",
+        "phone": "0234 432 243",
+        "city": "Pulchowk"
+      }
+    </textarea>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
